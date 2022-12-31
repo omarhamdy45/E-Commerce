@@ -1,14 +1,10 @@
 package StepDefs;
 
 import Pages.Auth;
-import io.cucumber.java.After;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
 public class LoginDefs {

@@ -1,16 +1,13 @@
 package StepDefs;
 
 import Pages.Auth;
-import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -36,7 +33,7 @@ public class RegisterDefs {
     month.selectByVisibleText("May");
     Select year= new Select(Hooks.driver.findElement(By.name("DateOfBirthYear")));
     year.selectByValue("1999");
-    auth.Email(Hooks.driver).sendKeys("omar5@gmail.com");
+    auth.Email(Hooks.driver).sendKeys("omar7@gmail.com");
     auth.Company(Hooks.driver).sendKeys("vno");
     auth.Password(Hooks.driver).sendKeys("omar1010");
     auth.C_password(Hooks.driver).sendKeys("omar1010");

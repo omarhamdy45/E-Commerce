@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="211.144">
+    <testcase classname="Logged user could add different products to Shopping cart" name="user can add more than  product to cart" time="28.287">
+        <system-out><![CDATA[Given user navigate to Login page...........................................passed
+When user fill login data...................................................passed
+Then successfully login message displayed...................................passed
+Given user navigate to product page.........................................passed
+When user click on add to cart button.......................................passed
+Then product added message displayed........................................passed
+And shopping cart is increased..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logged user could select different Categories" name="user can select categories and sub categories if found" time="31.923">
+        <system-out><![CDATA[Given user navigate to homee page...........................................passed
+When user select category and subcategory...................................passed
+And user click on subcategory...............................................passed
+Then user find relative product page........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logged user could add different products to Shopping cart" name="user can add more than  product to cart" time="20.083">
+        <system-out><![CDATA[Given user navigate to Login page...........................................passed
+When user fill login data...................................................passed
+Then successfully login message displayed...................................passed
+Given user navigate to product page.........................................passed
+When user click on add to compare list button...............................passed
+Then product added to compare list message displayed........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logged user could add different products to Shopping cart" name="user complete his order" time="19.886">
+        <system-out><![CDATA[Given user navigate to Login page...........................................passed
+When user fill login data...................................................passed
+Then successfully login message displayed...................................passed
+And shopping cart is increased..............................................passed
+Given user navigate to shopping cart page...................................passed
+When user do checkout.......................................................passed
+And user fill all mandatory data............................................passed
+Then Click Confirm order....................................................passed
+And Successfully order message is visible...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logged user could filter with color" name="user can filter products with product like shoes" time="13.968">
+        <system-out><![CDATA[Given user navigate to shoes page...........................................passed
+When user Select color like red.............................................passed
+Then all shoes with red is displayed........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user can  login" name="user fill data to register to website" time="12.074">
+        <system-out><![CDATA[Given user navigate to Login page...........................................passed
+When user fill login data...................................................passed
+Then successfully login message displayed...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user can create account" name="user fill data to register to website" time="15.317">
+        <system-out><![CDATA[Given user navigate to register page........................................passed
+When user fill data.........................................................passed
+And user press register button..............................................passed
+Then successfully message displayed.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user can reset  your password" name="User could reset his/her password successfully" time="16.845">
+        <system-out><![CDATA[Given user navigate to reset page...........................................passed
+When user enter email.......................................................passed
+Then successfully recovery message displayed................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logged user could add different products to wishlist" name="user can add more than  product to wishlist" time="18.786">
+        <system-out><![CDATA[Given user navigate to Login page...........................................passed
+When user fill login data...................................................passed
+Then successfully login message displayed...................................passed
+Given user navigate to product page.........................................passed
+When user click on add to wish button.......................................passed
+Then product added  to wishlist message displayed...........................passed
+And wishlist counter is increased...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logged User could switch between currencies US-Euro" name="user switch us to euro" time="12.307">
+        <system-out><![CDATA[Given user navigate to home page............................................passed
+When user click on drop down list and click on Euro.........................passed
+Then All the products change to euro symbol.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could reset his/her password successfully" name="user could search for product name" time="12.096">
+        <system-out><![CDATA[Given user navigate to home field...........................................passed
+When user search for product name like apple................................passed
+Then user could search successfully and go to search page...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could reset his/her password successfully" name="user search using invalid product name" time="8.862">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user clicks on search field...........................................undefined
+When user search for product name like north................................skipped
+Then user could not search for the product..................................skipped
+]]></failure>
+    </testcase>
+</testsuite>

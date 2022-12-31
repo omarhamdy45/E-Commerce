@@ -1,23 +1,18 @@
 package StepDefs;
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-
-import java.sql.Driver;
 
 public class Categories {
 
     @Given("user navigate to homee page")
-    public void OpenBrowser() throws InterruptedException {
+    public void NavigateToHome() throws InterruptedException {
 
         Hooks.driver.navigate().to("https://demo.nopcommerce.com");
         Thread.sleep(3000);

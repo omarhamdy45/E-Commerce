@@ -1,18 +1,15 @@
 package StepDefs;
 
 import Pages.SearchPage;
-import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class SearchDefs {
   SearchPage searchitem=new SearchPage();
-    @Given("user navigate to home field")
+    @Given("user navigate to search field")
     public void OpenBrowser() throws InterruptedException {
 
         Hooks.driver.navigate().to("https://demo.nopcommerce.com");

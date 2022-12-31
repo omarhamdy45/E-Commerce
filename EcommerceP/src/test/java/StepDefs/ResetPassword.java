@@ -1,15 +1,12 @@
 package StepDefs;
 
 import Pages.Auth;
-import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class ResetPassword {
@@ -24,7 +21,7 @@ public class ResetPassword {
     public void FillResetData()throws InterruptedException{
         Auth auth=new Auth();
         WebElement  email=  auth.Email(Hooks.driver);
-        email.sendKeys("omar3@gmail.com");
+        email.sendKeys("omar4@gmail.com");
         email.sendKeys(Keys.ENTER);
         Thread.sleep(3000);
     }
